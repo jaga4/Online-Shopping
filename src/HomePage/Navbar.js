@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { Link ,useNavigate} from 'react-router-dom';
 import { useCart } from '../CartComponent/CartContext';
-
+import './Navbar.css';
 const NavbarComponent = () => {
     const { cartItemCount } = useCart();
     const navigate = useNavigate();
@@ -36,20 +36,10 @@ const NavbarComponent = () => {
                             ))}
                         </Nav>
                             <Button variant="outline-primary" onClick={handleSearchClick}>Search</Button>
-                            <div style={{ position: 'relative', cursor: 'pointer' }}>
-                                {/* <i className="bi bi-cart-fill text-primary" style={{ fontSize: '1.5rem', marginLeft: "10px" }} onClick={() => window.location.href = '/cart'}></i> */}
-                                <i className="bi bi-cart-fill text-primary" style={{ fontSize: '1.5rem', marginLeft: "10px" }} onClick={handleCartClick}></i>
+                            <div className="cart-icon-container">
+                                <i className="bi bi-cart-fill text-primary" style={{ fontSize: '1.5rem'}} onClick={handleCartClick}></i>
                                 {cartItemCount > 0 && (
-                                    <span style={{
-                                        position: 'absolute',
-                                        top: '-10px',
-                                        right: '-10px',
-                                        background: 'red',
-                                        color: 'white',
-                                        borderRadius: '50%',
-                                        padding: '0 5px',
-                                        fontSize: '0.8rem'
-                                    }}>
+                                    <span className="translate-middle badge rounded-pill bg-danger cart-badge">
                                         {cartItemCount}
                                     </span>
                                 )}

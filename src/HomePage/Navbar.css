@@ -1,0 +1,18 @@
+.cart-icon-container{
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cart-badge{
+    position: absolute;
+    top: -5px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 767.98px) {
+    .cart-icon-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
