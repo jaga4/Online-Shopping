@@ -1,0 +1,16 @@
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category-filter,
+.price-range-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-filter select,
+.price-range-filter input {
+    margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+.card-header {
+    position: relative;
+    padding: 0;
+  }
+  
+  .card-header .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .new-product {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  .badge {
+    background-color: #dc3545; 
+  }
+  .price-tag {
+    margin-top: 10px;
+    color: #111111;
+    font-weight: bold;
+}
+.product-rating{
+    margin-top: 5px;
+}
+  .product-rating i {
+    color: #ffc107; 
+    margin-right: 0.2rem; 
+    
+  }
+
+.product-rating i:last-child {
+    margin-right: 0; 
+  }
+  

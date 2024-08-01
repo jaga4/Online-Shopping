@@ -1,0 +1,46 @@
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.remove-button {
+    width: 100px; /* Set a fixed width for consistency */
+    align-self: flex-start; /* Aligns the button at the start of the item details */
+    margin-top: 10px; /* Adds space between the button and other elements */
+}
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout-button .btn {
+    width: 200px;
+}

@@ -1,0 +1,32 @@
+
+.custom-row {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.custom-column {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.profile-content {
+    margin-top: 40px;
+    color: #000;
+    padding: 0 90px;
+}
